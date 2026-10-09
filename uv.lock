@@ -199,15 +199,6 @@ wheels = [
 ]
 
 [[package]]
-name = "dbt"
-version = "2.0.6"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "mashumaro", extra = ["msgpack"] },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/b2/a0/89db2b6e0abc254b31ef9995af17b76b1eef27b2362d8be0120add315abf/dbt-2.0.6.tar.gz", hash = "sha256:1e1b69302fcaa5e30fb0ab76e845693e679cad4ae48cbdfab3b425a33a94af16", size = 3291, upload-time = "2026-09-19T13:22:27.612Z" }
-
-[[package]]
 name = "dbt-adapters"
 version = "1.24.5"
 source = { registry = "https://pypi.org/simple" }
@@ -360,13 +351,13 @@ name = "demodatarepo"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "dbt" },
+    { name = "dbt-core" },
     { name = "dbt-postgres" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "dbt", specifier = ">=2.0.6" },
+    { name = "dbt-core", specifier = ">=1.12.5" },
     { name = "dbt-postgres", specifier = ">=1.11.0" },
 ]
 
