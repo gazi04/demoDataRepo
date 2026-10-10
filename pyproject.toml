@@ -1,7 +1,7 @@
 [project]
 name = "demodatarepo"
 version = "0.1.0"
-description = "It's a data project femo for testing out the SchemaGuard."
+description = "It's a data project demo for testing out the SchemaGuard."
 readme = "README.md"
 authors = [
     { name = "gazi04", email = "gazmendhalili2016@gmail.com" }
